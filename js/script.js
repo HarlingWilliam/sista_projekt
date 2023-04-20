@@ -1,9 +1,11 @@
-/* Open */
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+const navLogo = document.querySelector('#navbar__logo');
 
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
+// Display Mobile Menu
+const mobileMenu = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
+
+menu.addEventListener('click', mobileMenu);
