@@ -196,6 +196,12 @@
   padding: 200px 0;
  
 }
+.banner_players {
+  background: #672828;
+  background: linear-gradient(to right, #a9298b, #353232);
+  padding: 200px 0;
+ 
+}
 
 .banner__container {
   display: flex;
@@ -330,12 +336,12 @@
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin:  auto;
   height: 90%;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+  padding:  50px;
 }
   }
 
@@ -510,6 +516,10 @@
 }
 /*Footern blir responsiv*/
 @media screen and (max-width: 820px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
   .footer__links {
     padding-top: 2rem;
   }
@@ -539,3 +549,8 @@
   }
 }
 
+@media screen and (max-width: 446px){
+  .main__img--card{
+width: 300px;
+  }
+}
