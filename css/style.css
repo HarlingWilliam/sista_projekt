@@ -5,7 +5,7 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
-
+/*Det som gör så att navbaren ser ut som den gör, färger, storlek etc. */
 .navbar {
   background: #131313;
   height: 80px;
@@ -28,7 +28,7 @@
   margin: 0 auto;
   padding: 0 50px;
 }
-
+/* Loggan i vänstra hörnet, linear gradient är vilka färger den har, webkit och moz är så att linear gradient funkar på till exempel safari*/
 #navbar__logo {
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -44,7 +44,7 @@
   text-decoration: none;
   font-size: 2rem;
 }
-
+/* Vart de olika grejerna i navbaren ska vara någon*/
 .navbar__menu {
   display: flex;
   align-items: center;
@@ -177,7 +177,7 @@
     display: block;
     cursor: pointer;
   }
-
+/* Det som gör att menyn animeras när man klickar på den*/
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -190,6 +190,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+/*Det som är under navbaren, bakgrundsfärg*/
 .banner {
   background: #672828;
   background: linear-gradient(to right, #a92929, #aa9292);
@@ -202,7 +203,7 @@
   padding: 200px 0;
  
 }
-
+/* Vart texten ska finnas inuti bannern*/
 .banner__container {
   display: flex;
   flex-direction: column;
@@ -266,7 +267,7 @@
 .highlight {
   border-bottom: 4px solid rgb(132, 0, 255);
 }
-
+/* Så att bannern fungerar på mindre skärmar*/
 @media screen and (max-width: 768px) {
   .banner__heading {
     font-size: 60px;
@@ -276,6 +277,7 @@
     font-size: 40px;
   }
 }
+/* Det som är under bannern, en bild och en knapp*/
 .main__btn {
   font-size: 1.8rem;
   background: #d31616;
@@ -329,7 +331,7 @@
 }
 
 
-/* För mindre skärmar */
+/* För mindre skärmar, detta gör så att när man byter till mobil så hamnar texten ovanför bilden. */
 @media screen and (max-width: 700px) {
   .main__container {
     display: grid;
@@ -404,17 +406,17 @@
 
 .main__content h2 {
   font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
+  background: #ff8177; 
   background: -webkit-linear-gradient(
     to right,
     #9114ff,
     #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #8f0eff,
     #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); /* Det funkar på olika browsers*/
   background-size: 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -560,6 +562,7 @@ width: 300px;
   margin: 0;
   box-sizing: border-box;
 }
+/* Detta gör så att jag kan göra samma sak på de andra sidorna, fast med till exempel olika färger*/
 .mainy{
   width: 100%;
   height: auto;
@@ -587,7 +590,7 @@ width: 300px;
   transform: translateX(-50%);
 }
 
-/* containyr Css Start  */
+/* Detta är css för tidslinjekoden  */
 
 .containyr{
   width: 70%;
@@ -687,7 +690,7 @@ ul li .date{
   transform: translate(-50%, -50%);
 }
 
-/*  Media Query Started  */
+/*  Så att tidslinjen blir responsiv */
 
 @media screen and (max-width:1224px){
   .containyr{
