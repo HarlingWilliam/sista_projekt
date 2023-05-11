@@ -346,7 +346,13 @@
   padding:  50px;
 }
   }
-
+  @media screen and (max-width: 335px){
+    .main__img--card {
+      height: 100px;
+      width:100px;
+    }
+  
+  }
   .main__img--container {
     display: flex;
     justify-content: center;
